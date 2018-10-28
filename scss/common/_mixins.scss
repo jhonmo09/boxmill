@@ -1,0 +1,39 @@
+@mixin rotate($rotation) {
+	-webkit-transform: rotate($rotation);
+     -moz-transform: rotate($rotation);
+      -ms-transform: rotate($rotation);
+          transform: rotate($rotation);
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
+@mixin translateY($vert_translation) {
+	-webkit-transform: translateY($vert_translation);
+     -moz-transform: translateY($vert_translation);
+      -ms-transform: translateY($vert_translation);
+          transform: translateY($vert_translation);
+}
+@mixin scale($scaleX, $scaleY) {
+	-webkit-transform: scale($scaleX, $scaleY);
+     -moz-transform: scale($scaleX, $scaleY);
+      -ms-transform: scale($scaleX, $scaleY);
+          transform: scale($scaleX, $scaleY);
+}
+
+@mixin appearance($appearance) {
+	-webkit-appearance: $appearance;
+     -moz-appearance: $appearance;
+      -ms-appearance: $appearance;
+          appearance: $appearance;
+}
+
+@mixin placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}
